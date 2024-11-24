@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Shell
-    x:Class="TigerEsports_V1.AppShell"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:TigerEsports_V1"
-    Shell.FlyoutBehavior="Disabled"
-    Title="TigerEsports_V1">
+<Shell x:Class="TigerEsports_V1.AppShell"
+       xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:TigerEsports_V1"
+       xmlns:views="clr-namespace:TigerEsports_V1.Views"
+       Title="TigerEsports_V1">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem Title="Home">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:HomePage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="About Us">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:AboutPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Games">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:GamesPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Teams">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:TeamsPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Results">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:ResultsPage}" />
+        </Tab>
+    </FlyoutItem>
+
 
 </Shell>
