@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using Material.Components.Maui.Extensions;
+//using Material.Components.Maui.Extensions;
 
 namespace TigerEsports_V1
 {
@@ -14,8 +14,8 @@ namespace TigerEsports_V1
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                })
-                .UseMaterialComponents();
+                });
+                //.UseMaterialComponents();
 
 #if DEBUG
             builder.Logging.AddDebug();

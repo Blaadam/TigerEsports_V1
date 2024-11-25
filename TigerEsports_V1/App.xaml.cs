@@ -10,6 +10,7 @@ namespace TigerEsports_V1
 
             //MainPage = new AppShell();
             MainPage = new LoginPage();
+            //MainPage = new MainPage();
         }
     }
 }
