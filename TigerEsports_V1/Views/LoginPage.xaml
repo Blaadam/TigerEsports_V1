@@ -16,7 +16,6 @@
                Aspect="AspectFit" />
 
         <!--Username Field-->
-
         <StackLayout VerticalOptions="Start"
                      Padding="5">
             <Label Text="Username"
@@ -28,25 +27,27 @@
                    CornerRadius="8"
                    BorderColor="Transparent">
                 <Entry x:Name="UsernameTb"
-                       PlaceholderColor="#000000"
+                       PlaceholderColor="#7E858C"
                        Placeholder="Enter your username"
                        HeightRequest="48" />
             </Frame>
 
         </StackLayout>
 
+        <!--Password Field-->
         <StackLayout VerticalOptions="Start"
                      Padding="5">
             <Label Text="Password"
                    FontAttributes="Bold"
                    HorizontalOptions="Start" />
-
+            
             <Frame Padding="2"
                    BackgroundColor="#edeff2"
                    CornerRadius="8"
                    BorderColor="Transparent">
                 <Entry x:Name="PasswordTb"
-                       PlaceholderColor="#000000"
+                       Background="Transparent"
+                       PlaceholderColor="#7E858C"
                        IsPassword="True"
                        Placeholder="Enter your password"
                        HeightRequest="48" />
@@ -54,9 +55,17 @@
 
         </StackLayout>
 
+        <Label Padding="5" FontSize="14" Text="By logging in, you agree to abide by our Non-Disclosure Agreement and terms of service. Unauthorized sharing or misuse of information is prohibited." />
 
+        <Button BackgroundColor="{StaticResource Primary}" Text="Log In" Margin="10" TextColor="White" />
 
-
-
+        <Label Padding="5"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Text="Don't have an account? Create one here!">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
     </VerticalStackLayout>
 </ContentPage>

@@ -15,7 +15,7 @@ namespace TigerEsports_V1
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
-                //.UseMaterialComponents();
+            //.UseMaterialComponents();
 
 #if DEBUG
             builder.Logging.AddDebug();
