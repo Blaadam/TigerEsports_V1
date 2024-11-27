@@ -60,7 +60,8 @@
                Text="By logging in, you agree to abide by our Non-Disclosure Agreement and terms of service. Unauthorized sharing or misuse of information is prohibited." />
 
         <!--Login Button-->
-        <Button BackgroundColor="{StaticResource Primary}"
+        <Button x:Name="LoginBtn"
+                BackgroundColor="{StaticResource Primary}"
                 Text="Log In"
                 Margin="10"
                 TextColor="White" />

@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TigerEsports_V1.Views.RegisterPage"
              Title="Register Page"
-             Padding="2">
+             Padding="2"
+             xmlns:validation="clr-namespace:TigerEsports_V1.Validation">
     <VerticalStackLayout>
         <Label Text="Register"
                FontSize="18"
@@ -49,7 +50,11 @@
                        PlaceholderColor="#7E858C"
                        IsPassword="True"
                        Placeholder="********"
-                       HeightRequest="48" />
+                       HeightRequest="48">
+                    <Entry.Behaviors>
+                        <validation:PasswordValidation />
+                    </Entry.Behaviors>
+                </Entry>
             </Frame>
         </StackLayout>
 
@@ -68,7 +73,11 @@
                        PlaceholderColor="#7E858C"
                        IsPassword="True"
                        Placeholder="********"
-                       HeightRequest="48" />
+                       HeightRequest="48">
+                    <Entry.Behaviors>
+                        <validation:ConfirmPasswordValidation />
+                    </Entry.Behaviors>
+                </Entry>
             </Frame>
         </StackLayout>
 
@@ -131,10 +140,12 @@
                Text="By logging in, you agree to abide by our Non-Disclosure Agreement and terms of service. Unauthorized sharing or misuse of information is prohibited." />
 
         <!--Register Button-->
-        <Button BackgroundColor="{StaticResource Primary}"
+        <Button x:Name="RegisterBtn"
+                BackgroundColor="{StaticResource Primary}"
                 Text="Create Account"
                 Margin="10"
-                TextColor="White" />
+                TextColor="White"
+                Clicked="RegisterBtn_Clicked" />
 
         <!--Login Link-->
         <Label Padding="5"

@@ -1,16 +1,16 @@
-﻿using TigerEsports_V1.Views;
+﻿using TigerEsports_V1.Databases;
+using TigerEsports_V1.Views;
 
 namespace TigerEsports_V1
 {
     public partial class App : Application
     {
-        public App()
+        public App(UserDatabase database)
         {
             InitializeComponent();
 
             //MainPage = new AppShell();
-            MainPage = new LoginPage();
-            //MainPage = new MainPage();
+            MainPage = new LoginPage(database);
         }
     }
 }
