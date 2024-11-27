@@ -6,4 +6,9 @@ public partial class RegisterPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    {
+        Application.Current.MainPage = new LoginPage();
+    }
 }
