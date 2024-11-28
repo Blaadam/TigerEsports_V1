@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TigerEsports_V1.Views.LoginPage"
              Title="Login Page"
-             Padding="2">
+             Padding="2"
+             xmlns:validation="clr-namespace:TigerEsports_V1.Validation">
     <VerticalStackLayout>
         <Label Text="Tiger Esports"
                FontSize="18"
@@ -50,7 +51,11 @@
                        PlaceholderColor="#7E858C"
                        IsPassword="True"
                        Placeholder="Enter your password"
-                       HeightRequest="48" />
+                       HeightRequest="48">
+                    <Entry.Behaviors>
+                        <validation:LoginPasswordValidation />
+                    </Entry.Behaviors>
+                </Entry>
             </Frame>
         </StackLayout>
 
@@ -64,7 +69,8 @@
                 BackgroundColor="{StaticResource Primary}"
                 Text="Log In"
                 Margin="10"
-                TextColor="White" />
+                TextColor="White"
+                Clicked="LoginBtn_Clicked"/>
 
         <!--Register Link-->
         <Label Padding="5"
