@@ -52,6 +52,6 @@ public partial class LoginPage : ContentPage
             return;
         }
 
-        Application.Current.MainPage = new AppShell();
+        Application.Current.MainPage = new AppShell(_database);
     }
 }

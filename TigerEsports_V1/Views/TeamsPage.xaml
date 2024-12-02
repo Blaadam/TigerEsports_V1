@@ -2,11 +2,136 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TigerEsports_V1.Views.TeamsPage"
-             Title="TeamsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Teams">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <!--Dignitas-->
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Padding="5, 5, 5, 5"
+                   Margin="8, 16, 8, 8"
+                   HeightRequest="110"
+                   BackgroundColor="#ffffff">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="dignitas.jpg"
+                           Aspect="AspectFit"
+                           MaximumWidthRequest="75" />
+
+                    <Label Text="Dignitas"
+                           Padding="10, 5, 0, 5"
+                           FontSize="24"
+                           BackgroundColor="#ffffff"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+            <!--Evil Geniuses-->
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Padding="5, 5, 5, 5"
+                   Margin="8, 8, 8, 8"
+                   HeightRequest="110"
+                   BackgroundColor="#ffffff">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="evil_geniuses.jpg"
+                           Aspect="AspectFit"
+                           MaximumWidthRequest="75" />
+
+                    <Label Text="Evil Geniuses"
+                           Padding="10, 5, 0, 5"
+                           FontSize="24"
+                           BackgroundColor="#ffffff"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+            <!--FaZe-->
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Padding="5, 5, 5, 5"
+                   Margin="8, 8, 8, 8"
+                   HeightRequest="110"
+                   BackgroundColor="#ffffff">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="faze.jpg"
+                           Aspect="AspectFit"
+                           MaximumWidthRequest="75" />
+
+                    <Label Text="FaZe"
+                           Padding="10, 5, 0, 5"
+                           FontSize="24"
+                           BackgroundColor="#ffffff"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+            <!--Fnatic-->
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Padding="5, 5, 5, 5"
+                   Margin="8, 8, 8, 8"
+                   HeightRequest="110"
+                   BackgroundColor="#ffffff">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="fnatic.jpg"
+                           Aspect="AspectFit"
+                           MaximumWidthRequest="75" />
+
+                    <Label Text="Fnatic"
+                           Padding="10, 5, 0, 5"
+                           FontSize="24"
+                           BackgroundColor="#ffffff"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+            <!--Invictus-->
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Padding="5, 5, 5, 5"
+                   Margin="8, 8, 8, 8"
+                   HeightRequest="110"
+                   BackgroundColor="#ffffff">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="invictus.jpg"
+                           Aspect="AspectFit"
+                           MaximumWidthRequest="75" />
+
+                    <Label Text="Invictus"
+                           Padding="10, 5, 0, 5"
+                           FontSize="24"
+                           BackgroundColor="#ffffff"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+            <!--Team Liquid-->
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Padding="5, 5, 5, 5"
+                   Margin="8, 8, 8, 16"
+                   HeightRequest="110"
+                   BackgroundColor="#ffffff">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="team_liquid.jpg"
+                           Aspect="AspectFit"
+                           MaximumWidthRequest="75" />
+
+                    <Label Text="Team Liquid"
+                           Padding="10, 5, 0, 5"
+                           FontSize="24"
+                           BackgroundColor="#ffffff"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

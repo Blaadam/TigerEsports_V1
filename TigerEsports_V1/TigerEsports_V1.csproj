@@ -40,7 +40,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -57,20 +57,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AndroidResource Remove="Resources\Images\Games\**" />
-	  <AndroidResource Remove="Resources\Images\TeamIcons\**" />
-	  <Compile Remove="Resources\Images\Games\**" />
-	  <Compile Remove="Resources\Images\TeamIcons\**" />
-	  <EmbeddedResource Remove="Resources\Images\Games\**" />
-	  <EmbeddedResource Remove="Resources\Images\TeamIcons\**" />
-	  <MauiCss Remove="Resources\Images\Games\**" />
-	  <MauiCss Remove="Resources\Images\TeamIcons\**" />
-	  <MauiImage Remove="Resources\Images\Games\**" />
-	  <MauiImage Remove="Resources\Images\TeamIcons\**" />
-	  <MauiXaml Remove="Resources\Images\Games\**" />
-	  <MauiXaml Remove="Resources\Images\TeamIcons\**" />
-	  <None Remove="Resources\Images\Games\**" />
-	  <None Remove="Resources\Images\TeamIcons\**" />
+		<AndroidResource Remove="Resources\Images\Games\**" />
+		<AndroidResource Remove="Resources\Images\TeamIcons\**" />
+		<Compile Remove="Resources\Images\Games\**" />
+		<Compile Remove="Resources\Images\TeamIcons\**" />
+		<EmbeddedResource Remove="Resources\Images\Games\**" />
+		<EmbeddedResource Remove="Resources\Images\TeamIcons\**" />
+		<MauiCss Remove="Resources\Images\Games\**" />
+		<MauiCss Remove="Resources\Images\TeamIcons\**" />
+		<MauiImage Remove="Resources\Images\Games\**" />
+		<MauiImage Remove="Resources\Images\TeamIcons\**" />
+		<MauiXaml Remove="Resources\Images\Games\**" />
+		<MauiXaml Remove="Resources\Images\TeamIcons\**" />
+		<None Remove="Resources\Images\Games\**" />
+		<None Remove="Resources\Images\TeamIcons\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -82,33 +82,33 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\AboutPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\GamesPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\HomePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\LoginPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\RegisterPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\ResultsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\TeamsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+		<MauiXaml Update="Views\AboutPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\GamesPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\HomePage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\LoginPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\RegisterPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\ResultsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\TeamsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="Resources\Images\icon_tg.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
+		<None Update="Resources\Images\icon_tg.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 
 </Project>

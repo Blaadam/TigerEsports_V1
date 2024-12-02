@@ -65,6 +65,7 @@ public partial class RegisterPage : ContentPage
         newUser.AccessLevel = accessLevel;
 
         await _database.SaveUserAsync(newUser);
-        Application.Current.MainPage = new AppShell();
+
+        Application.Current.MainPage = new AppShell(_database);
     }
 }
