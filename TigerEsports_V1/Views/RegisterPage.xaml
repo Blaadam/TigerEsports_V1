@@ -5,156 +5,158 @@
              Title="Register Page"
              Padding="2"
              xmlns:validation="clr-namespace:TigerEsports_V1.Validation">
-    <VerticalStackLayout>
-        <Label Text="Register"
-               FontSize="18"
-               FontAttributes="Bold"
-               Margin="5"
-               VerticalOptions="Center"
-               HorizontalOptions="Center" />
-
-        <Image Source="icon_tg.png"
-               HeightRequest="185"
-               Aspect="AspectFit" />
-
-        <!--Username Field-->
-        <StackLayout VerticalOptions="Start"
-                     Padding="5">
-            <Label Text="Username"
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Register"
+                   FontSize="18"
                    FontAttributes="Bold"
-                   HorizontalOptions="Start" />
+                   Margin="5"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
 
-            <Frame Padding="2"
-                   BackgroundColor="#edeff2"
-                   CornerRadius="8"
-                   BorderColor="Transparent">
-                <Entry x:Name="UsernameTb"
-                       PlaceholderColor="#7E858C"
-                       Placeholder="Enter your username"
-                       HeightRequest="48" />
-            </Frame>
-        </StackLayout>
+            <Image Source="icon_tg.png"
+                   HeightRequest="185"
+                   Aspect="AspectFit" />
 
-        <!--Password Field-->
-        <StackLayout VerticalOptions="Start"
-                     Padding="5">
-            <Label Text="Password"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Start" />
+            <!--Username Field-->
+            <StackLayout VerticalOptions="Start"
+                         Padding="5">
+                <Label Text="Username"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start" />
 
-            <Frame Padding="2"
-                   BackgroundColor="#edeff2"
-                   CornerRadius="8"
-                   BorderColor="Transparent">
-                <Entry x:Name="PasswordTb"
-                       PlaceholderColor="#7E858C"
-                       IsPassword="True"
-                       Placeholder="********"
-                       HeightRequest="48">
-                    <Entry.Behaviors>
-                        <validation:PasswordValidation />
-                    </Entry.Behaviors>
-                </Entry>
-            </Frame>
-        </StackLayout>
+                <Frame Padding="2"
+                       BackgroundColor="#edeff2"
+                       CornerRadius="8"
+                       BorderColor="Transparent">
+                    <Entry x:Name="UsernameTb"
+                           PlaceholderColor="#7E858C"
+                           Placeholder="Enter your username"
+                           HeightRequest="48" />
+                </Frame>
+            </StackLayout>
 
-        <!--Confirm Password Field-->
-        <StackLayout VerticalOptions="Start"
-                     Padding="5">
-            <Label Text="Confirm Password"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Start" />
+            <!--Password Field-->
+            <StackLayout VerticalOptions="Start"
+                         Padding="5">
+                <Label Text="Password"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start" />
 
-            <Frame Padding="2"
-                   BackgroundColor="#edeff2"
-                   CornerRadius="8"
-                   BorderColor="Transparent">
-                <Entry x:Name="ConfirmPasswordTb"
-                       PlaceholderColor="#7E858C"
-                       IsPassword="True"
-                       Placeholder="********"
-                       HeightRequest="48">
-                    <Entry.Behaviors>
-                        <validation:ConfirmPasswordValidation />
-                    </Entry.Behaviors>
-                </Entry>
-            </Frame>
-        </StackLayout>
+                <Frame Padding="2"
+                       BackgroundColor="#edeff2"
+                       CornerRadius="8"
+                       BorderColor="Transparent">
+                    <Entry x:Name="PasswordTb"
+                           PlaceholderColor="#7E858C"
+                           IsPassword="True"
+                           Placeholder="********"
+                           HeightRequest="48">
+                        <Entry.Behaviors>
+                            <validation:PasswordValidation />
+                        </Entry.Behaviors>
+                    </Entry>
+                </Frame>
+            </StackLayout>
 
-        <!--Team Picker-->
-        <StackLayout VerticalOptions="Start"
-                     Padding="5">
-            <Label Text="Esports Team"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Start" />
+            <!--Confirm Password Field-->
+            <StackLayout VerticalOptions="Start"
+                         Padding="5">
+                <Label Text="Confirm Password"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start" />
 
-            <Frame Padding="2"
-                   BackgroundColor="#edeff2"
-                   CornerRadius="8"
-                   BorderColor="Transparent">
+                <Frame Padding="2"
+                       BackgroundColor="#edeff2"
+                       CornerRadius="8"
+                       BorderColor="Transparent">
+                    <Entry x:Name="ConfirmPasswordTb"
+                           PlaceholderColor="#7E858C"
+                           IsPassword="True"
+                           Placeholder="********"
+                           HeightRequest="48">
+                        <Entry.Behaviors>
+                            <validation:ConfirmPasswordValidation />
+                        </Entry.Behaviors>
+                    </Entry>
+                </Frame>
+            </StackLayout>
 
-                <Picker x:Name="teamPicker"
-                        Title="Choose a team">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Dignitas</x:String>
-                            <x:String>Evil Geniuses</x:String>
-                            <x:String>FaZe</x:String>
-                            <x:String>FnaticMonkey</x:String>
-                            <x:String>Invictus</x:String>
-                            <x:String>Team Liquid</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-            </Frame>
-        </StackLayout>
+            <!--Team Picker-->
+            <StackLayout VerticalOptions="Start"
+                         Padding="5">
+                <Label Text="Esports Team"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start" />
 
-        <!--Access Picker-->
-        <StackLayout VerticalOptions="Start"
-                     Padding="5">
-            <Label Text="Access Level"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Start" />
+                <Frame Padding="2"
+                       BackgroundColor="#edeff2"
+                       CornerRadius="8"
+                       BorderColor="Transparent">
 
-            <Frame Padding="2"
-                   BackgroundColor="#edeff2"
-                   CornerRadius="8"
-                   BorderColor="Transparent">
+                    <Picker x:Name="teamPicker"
+                            Title="Choose a team">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Dignitas</x:String>
+                                <x:String>Evil Geniuses</x:String>
+                                <x:String>FaZe</x:String>
+                                <x:String>FnaticMonkey</x:String>
+                                <x:String>Invictus</x:String>
+                                <x:String>Team Liquid</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Frame>
+            </StackLayout>
 
-                <Picker x:Name="accessPicker"
-                        Title="Choose an access level">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Player</x:String>
-                            <x:String>Manager</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-            </Frame>
-        </StackLayout>
+            <!--Access Picker-->
+            <StackLayout VerticalOptions="Start"
+                         Padding="5">
+                <Label Text="Access Level"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start" />
 
-        <!--NDA Text-->
-        <Label Padding="5"
-               FontSize="14"
-               Text="By logging in, you agree to abide by our Non-Disclosure Agreement and terms of service. Unauthorized sharing or misuse of information is prohibited." />
+                <Frame Padding="2"
+                       BackgroundColor="#edeff2"
+                       CornerRadius="8"
+                       BorderColor="Transparent">
 
-        <!--Register Button-->
-        <Button x:Name="RegisterBtn"
-                BackgroundColor="{StaticResource Primary}"
-                Text="Create Account"
-                Margin="10"
-                TextColor="White"
-                Clicked="RegisterBtn_Clicked" />
+                    <Picker x:Name="accessPicker"
+                            Title="Choose an access level">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Player</x:String>
+                                <x:String>Manager</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Frame>
+            </StackLayout>
 
-        <!--Login Link-->
-        <Label Padding="5"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"
-               Text="Already have an account? Log in here!">
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-            </Label.GestureRecognizers>
-        </Label>
+            <!--NDA Text-->
+            <Label Padding="5"
+                   FontSize="14"
+                   Text="By logging in, you agree to abide by our Non-Disclosure Agreement and terms of service. Unauthorized sharing or misuse of information is prohibited." />
 
-    </VerticalStackLayout>
+            <!--Register Button-->
+            <Button x:Name="RegisterBtn"
+                    BackgroundColor="{StaticResource Primary}"
+                    Text="Create Account"
+                    Margin="10"
+                    TextColor="White"
+                    Clicked="RegisterBtn_Clicked" />
+
+            <!--Login Link-->
+            <Label Padding="5"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Text="Already have an account? Log in here!">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
