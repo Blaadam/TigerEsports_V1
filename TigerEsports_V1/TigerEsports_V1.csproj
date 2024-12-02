@@ -57,6 +57,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="Resources\Images\Games\**" />
+	  <AndroidResource Remove="Resources\Images\TeamIcons\**" />
+	  <Compile Remove="Resources\Images\Games\**" />
+	  <Compile Remove="Resources\Images\TeamIcons\**" />
+	  <EmbeddedResource Remove="Resources\Images\Games\**" />
+	  <EmbeddedResource Remove="Resources\Images\TeamIcons\**" />
+	  <MauiCss Remove="Resources\Images\Games\**" />
+	  <MauiCss Remove="Resources\Images\TeamIcons\**" />
+	  <MauiImage Remove="Resources\Images\Games\**" />
+	  <MauiImage Remove="Resources\Images\TeamIcons\**" />
+	  <MauiXaml Remove="Resources\Images\Games\**" />
+	  <MauiXaml Remove="Resources\Images\TeamIcons\**" />
+	  <None Remove="Resources\Images\Games\**" />
+	  <None Remove="Resources\Images\TeamIcons\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />

@@ -2,11 +2,75 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TigerEsports_V1.Views.GamesPage"
-             Title="GamesPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Games">
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+
+            <!--League of Heros-->
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Padding="0"
+                   BackgroundColor="#ffffff">
+                <StackLayout>
+                    <Border StrokeShape="RoundRectangle 10"
+                            MaximumHeightRequest="250">
+                        <Image Source="league_of_heros.png"
+                               Aspect="AspectFill"
+                               HeightRequest="250" />
+                    </Border>
+
+                    <Label Text="League of Heros"
+                           Padding="10, 5, 0, 5"
+                           FontSize="16"
+                           BackgroundColor="#ffffff"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start" />
+                </StackLayout>
+            </Frame>
+
+            <!--Warfield-->
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Padding="0"
+                   BackgroundColor="#ffffff">
+                <StackLayout>
+                    <Border StrokeShape="RoundRectangle 10"
+                            MaximumHeightRequest="250">
+                        <Image Source="warfield.png"
+                               Aspect="AspectFill"
+                               HeightRequest="250" />
+                    </Border>
+
+                    <Label Text="Warfield"
+                           Padding="10, 5, 0, 5"
+                           FontSize="16"
+                           BackgroundColor="#ffffff"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start" />
+                </StackLayout>
+            </Frame>
+
+            <!--Project X-->
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Padding="0"
+                   BackgroundColor="#ffffff">
+                <StackLayout>
+                    <Border StrokeShape="RoundRectangle 10"
+                            MaximumHeightRequest="250">
+                        <Image Source="project_x.png"
+                               Aspect="AspectFill"
+                               HeightRequest="250" />
+                    </Border>
+
+                    <Label Text="Project X"
+                           Padding="10, 5, 0, 5"
+                           FontSize="16"
+                           BackgroundColor="#ffffff"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start" />
+                </StackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
