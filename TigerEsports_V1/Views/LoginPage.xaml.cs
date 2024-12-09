@@ -53,5 +53,6 @@ public partial class LoginPage : ContentPage
         }
 
         Application.Current.MainPage = new AppShell(_database);
+        await DisplayAlert("Login Successful", "You have successfully logged into your account.", "Continue");
     }
 }

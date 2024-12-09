@@ -67,5 +67,6 @@ public partial class RegisterPage : ContentPage
         await _database.SaveUserAsync(newUser);
 
         Application.Current.MainPage = new AppShell(_database);
+        await DisplayAlert("Registration Successful", "You have successfully created an account!", "Continue");
     }
 }

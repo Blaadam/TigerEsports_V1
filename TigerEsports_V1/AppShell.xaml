@@ -6,27 +6,29 @@
        xmlns:views="clr-namespace:TigerEsports_V1.Views"
        Title="TigerEsports_V1">
 
-    <FlyoutItem Title="Home">
+    <FlyoutItem Title="Home"
+                Icon="home_icon.svg">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate views:HomePage}" />
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="About Us">
+    <FlyoutItem Title="About Us"
+                Icon="about_icon.svg">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate views:AboutPage}" />
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Games">
+    <FlyoutItem Title="Games" Icon="games_icon.svg">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate views:GamesPage}" />
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Teams">
+    <FlyoutItem Title="Teams" Icon="teams_icon.svg">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate views:TeamsPage}" />
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Results">
+    <FlyoutItem Title="Results" Icon="results_icon.svg">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate views:ResultsPage}" />
         </Tab>
@@ -34,5 +36,6 @@
 
     <MenuItem x:Name="LogoutBtn"
               Text="Logout"
+              IconImageSource="logout_icon.svg"
               Clicked="LogoutBtn_Clicked" />
 </Shell>

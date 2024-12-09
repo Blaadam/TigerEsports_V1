@@ -184,6 +184,42 @@
                 </Grid>
             </Frame>
 
+            <!--Dignitas-->
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Padding="5, 5, 5, 5"
+                   Margin="8, 16, 8, 8"
+                   HeightRequest="110"
+                   BackgroundColor="#ffffff">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="75" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout VerticalOptions="Center">
+                        <Label Text="Fnatic vs FaZe"
+                               Padding="10, 5, 0, 0"
+                               FontSize="18"
+                               BackgroundColor="#ffffff"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center" />
+
+                        <Label Text="Final Score: 3-2"
+                               Padding="10, 0, 0, 5"
+                               FontSize="14"
+                               BackgroundColor="#ffffff"
+                               VerticalOptions="Center" />
+                    </StackLayout>
+
+                    <Image Source="dignitas.jpg"
+                           Aspect="AspectFit"
+                           Grid.Column="1"
+                           Margin="0, 0, 5, 0"
+                           MaximumWidthRequest="75" />
+                </Grid>
+            </Frame>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
