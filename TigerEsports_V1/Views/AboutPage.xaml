@@ -4,138 +4,140 @@
              x:Class="TigerEsports_V1.Views.AboutPage"
              Title="About Us"
              Padding="2">
-    <VerticalStackLayout>
-        <Label Text="Tiger Games was formed in 2018 by Andy Johnson and has grown into a small/medium games development business.  The company now employs around 50 members of staff, and it has an exciting product pipeline of video games expected to release in a few years’ time.  Currently, the company has two live games and a beta released game.  The two games are Warfield and League of Heroes’ and project x which is currently being beta tested by a designated user group.  "
-               Padding="5" />
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Tiger Games was formed in 2018 by Andy Johnson and has grown into a small/medium games development business.  The company now employs around 50 members of staff, and it has an exciting product pipeline of video games expected to release in a few years’ time.  Currently, the company has two live games and a beta released game.  The two games are Warfield and League of Heroes’ and project x which is currently being beta tested by a designated user group.  "
+                   Padding="5" />
 
-        <Label Text="Our Team"
-               FontSize="Medium"
-               FontAttributes="Bold"
-               Padding="5" />
+            <Label Text="Our Team"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   Padding="5" />
 
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition Width="10" />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition Height="10" />
-                <RowDefinition />
-            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="10" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
 
-            <!--Employee 1-->
-            <Frame Grid.Row="0"
-                   Grid.Column="0"
-                   Padding="0"
-                   BackgroundColor="#ffffff">
-                <StackLayout>
-                    <Border StrokeShape="RoundRectangle 10"
-                            MaximumHeightRequest="200">
-                        <Image Source="andreea_septelici.png"
-                               Aspect="AspectFill"
-                               MaximumHeightRequest="200" />
-                    </Border>
+                <!--Employee 1-->
+                <Frame Grid.Row="0"
+                       Grid.Column="0"
+                       Padding="0"
+                       BackgroundColor="#ffffff">
+                    <StackLayout>
+                        <Border StrokeShape="RoundRectangle 10"
+                                MaximumHeightRequest="200">
+                            <Image Source="andreea_septelici.png"
+                                   Aspect="AspectFill"
+                                   MaximumHeightRequest="200" />
+                        </Border>
 
-                    <Label Text="Andrea Septelici"
-                           Padding="5, 0, 5, 5"
-                           FontSize="16"
-                           BackgroundColor="#ffffff"
-                           FontAttributes="Bold"
-                           HorizontalOptions="Start" />
+                        <Label Text="Andrea Septelici"
+                               Padding="5, 0, 5, 5"
+                               FontSize="16"
+                               BackgroundColor="#ffffff"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start" />
 
-                    <Label Text="Programmer"
-                           Padding="0, 0, 10, 5"
-                           FontSize="14"
-                           BackgroundColor="#ffffff"
-                           HorizontalOptions="Start" />
-                </StackLayout>
-            </Frame>
+                        <Label Text="Programmer"
+                               Padding="0, 0, 10, 5"
+                               FontSize="14"
+                               BackgroundColor="#ffffff"
+                               HorizontalOptions="Start" />
+                    </StackLayout>
+                </Frame>
 
-            <!--Employee 2-->
-            <Frame Grid.Row="0"
-                   Grid.Column="2"
-                   Padding="0"
-                   BackgroundColor="#ffffff">
-                <StackLayout>
-                    <Border StrokeShape="RoundRectangle 10"
-                            MaximumHeightRequest="200">
-                        <Image Source="megan_johns.png"
-                               Aspect="AspectFill"
-                               MaximumHeightRequest="200" />
-                    </Border>
+                <!--Employee 2-->
+                <Frame Grid.Row="0"
+                       Grid.Column="2"
+                       Padding="0"
+                       BackgroundColor="#ffffff">
+                    <StackLayout>
+                        <Border StrokeShape="RoundRectangle 10"
+                                MaximumHeightRequest="200">
+                            <Image Source="megan_johns.png"
+                                   Aspect="AspectFill"
+                                   MaximumHeightRequest="200" />
+                        </Border>
 
-                    <Label Text="Megan Johns"
-                           Padding="5, 0, 5, 5"
-                           FontSize="16"
-                           BackgroundColor="#ffffff"
-                           FontAttributes="Bold"
-                           HorizontalOptions="Start" />
+                        <Label Text="Megan Johns"
+                               Padding="5, 0, 5, 5"
+                               FontSize="16"
+                               BackgroundColor="#ffffff"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start" />
 
-                    <Label Text="Design Intern"
-                           Padding="0, 0, 10, 5"
-                           FontSize="14"
-                           BackgroundColor="#ffffff"
-                           HorizontalOptions="Start" />
-                </StackLayout>
-            </Frame>
+                        <Label Text="Design Intern"
+                               Padding="0, 0, 10, 5"
+                               FontSize="14"
+                               BackgroundColor="#ffffff"
+                               HorizontalOptions="Start" />
+                    </StackLayout>
+                </Frame>
 
-            <!--Employee 3-->
-            <Frame Grid.Row="2"
-                   Grid.Column="0"
-                   Padding="0"
-                   BackgroundColor="#ffffff">
-                <StackLayout>
-                    <Border StrokeShape="RoundRectangle 10"
-                            MaximumHeightRequest="200">
-                        <Image Source="nicola_disley.png"
-                               Aspect="AspectFill"
-                               MaximumHeightRequest="200" />
-                    </Border>
+                <!--Employee 3-->
+                <Frame Grid.Row="2"
+                       Grid.Column="0"
+                       Padding="0"
+                       BackgroundColor="#ffffff">
+                    <StackLayout>
+                        <Border StrokeShape="RoundRectangle 10"
+                                MaximumHeightRequest="200">
+                            <Image Source="nicola_disley.png"
+                                   Aspect="AspectFill"
+                                   MaximumHeightRequest="200" />
+                        </Border>
 
-                    <Label Text="Nicola Disley"
-                           Padding="5, 0, 5, 5"
-                           FontSize="16"
-                           BackgroundColor="#ffffff"
-                           FontAttributes="Bold"
-                           HorizontalOptions="Start" />
+                        <Label Text="Nicola Disley"
+                               Padding="5, 0, 5, 5"
+                               FontSize="16"
+                               BackgroundColor="#ffffff"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start" />
 
-                    <Label Text="Lead Programmer"
-                           Padding="0, 0, 10, 5"
-                           FontSize="14"
-                           BackgroundColor="#ffffff"
-                           HorizontalOptions="Start" />
-                </StackLayout>
-            </Frame>
+                        <Label Text="Lead Programmer"
+                               Padding="0, 0, 10, 5"
+                               FontSize="14"
+                               BackgroundColor="#ffffff"
+                               HorizontalOptions="Start" />
+                    </StackLayout>
+                </Frame>
 
-            <!--Employee 4-->
-            <Frame Grid.Row="2"
-                   Grid.Column="2"
-                   Padding="0"
-                   BackgroundColor="#ffffff">
-                <StackLayout>
-                    <Border StrokeShape="RoundRectangle 10"
-                            MaximumHeightRequest="200">
-                        <Image Source="ste_brown.png"
-                               Aspect="AspectFill"
-                               MaximumHeightRequest="200" />
-                    </Border>
+                <!--Employee 4-->
+                <Frame Grid.Row="2"
+                       Grid.Column="2"
+                       Padding="0"
+                       BackgroundColor="#ffffff">
+                    <StackLayout>
+                        <Border StrokeShape="RoundRectangle 10"
+                                MaximumHeightRequest="200">
+                            <Image Source="ste_brown.png"
+                                   Aspect="AspectFill"
+                                   MaximumHeightRequest="200" />
+                        </Border>
 
-                    <Label Text="Ste Brown"
-                           Padding="5, 0, 5, 5"
-                           FontSize="16"
-                           BackgroundColor="#ffffff"
-                           FontAttributes="Bold"
-                           HorizontalOptions="Start" />
+                        <Label Text="Ste Brown"
+                               Padding="5, 0, 5, 5"
+                               FontSize="16"
+                               BackgroundColor="#ffffff"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start" />
 
-                    <Label Text="Technical Director"
-                           Padding="0, 0, 10, 5"
-                           FontSize="14"
-                           BackgroundColor="#ffffff"
-                           HorizontalOptions="Start" />
-                </StackLayout>
-            </Frame>
-        </Grid>
-    </VerticalStackLayout>
+                        <Label Text="Technical Director"
+                               Padding="0, 0, 10, 5"
+                               FontSize="14"
+                               BackgroundColor="#ffffff"
+                               HorizontalOptions="Start" />
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

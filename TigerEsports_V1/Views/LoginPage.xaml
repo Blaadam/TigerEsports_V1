@@ -93,34 +93,47 @@
 
             <Frame Background="#023971"
                    Grid.Row="1"
-                   CornerRadius="0">
+                   CornerRadius="8">
 
-                <HorizontalStackLayout Grid.Row="1"
-                                       BackgroundColor="#023971"
-                                       Spacing="48"
-                                       HorizontalOptions="Center">
-                    <Image Source="linkedin_icon.svg"
-                           Aspect="AspectFit"
-                           HeightRequest="28"
-                           HorizontalOptions="FillAndExpand" />
-                    <Image Source="facebook_icon.svg"
-                           Aspect="AspectFit"
-                           HeightRequest="28"
-                           HorizontalOptions="FillAndExpand" />
-                    <Image Source="youtube_icon.svg"
-                           Aspect="AspectFit"
-                           HeightRequest="28"
-                           HorizontalOptions="FillAndExpand" />
-                    <Image Source="instagram_icon.svg"
-                           Aspect="AspectFit"
-                           HeightRequest="28"
-                           HorizontalOptions="FillAndExpand" />
-                    <Image Source="x_icon.svg"
-                           Aspect="AspectFit"
-                           HeightRequest="28"
-                           HorizontalOptions="FillAndExpand" />
+                <FlexLayout BackgroundColor="#023971"
+                            Direction="Row"
+                            JustifyContent="SpaceAround">
 
-                </HorizontalStackLayout>
+                    <ImageButton x:Name="LinkedInIb"
+                                 Source="linkedin_icon.svg"
+                                 Aspect="AspectFit"
+                                 Clicked="LinkedInIb_Clicked"
+                                 WidthRequest="28"
+                                 HeightRequest="28" />
+
+                    <ImageButton x:Name="FacebookIb"
+                                 Source="facebook_icon.svg"
+                                 Aspect="AspectFit"
+                                 Clicked="FacebookIb_Clicked"
+                                 WidthRequest="28"
+                                 HeightRequest="28" />
+
+                    <ImageButton x:Name="YoutubeIb"
+                                 Source="youtube_icon.svg"
+                                 Aspect="AspectFit"
+                                 Clicked="YoutubeIb_Clicked"
+                                 WidthRequest="28"
+                                 HeightRequest="28" />
+
+                    <ImageButton x:Name="InstagramIb"
+                                 Source="instagram_icon.svg"
+                                 Aspect="AspectFit"
+                                 Clicked="InstagramIb_Clicked"
+                                 WidthRequest="28"
+                                 HeightRequest="28" />
+
+                    <ImageButton x:Name="XIb"
+                                 Source="x_icon.svg"
+                                 Aspect="AspectFit"
+                                 Clicked="XIb_Clicked"
+                                 WidthRequest="28"
+                                 HeightRequest="28" />
+                </FlexLayout>
 
             </Frame>
         </Grid>

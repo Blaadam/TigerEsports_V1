@@ -55,4 +55,29 @@ public partial class LoginPage : ContentPage
         Application.Current.MainPage = new AppShell(_database);
         await DisplayAlert("Login Successful", "You have successfully logged into your account.", "Continue");
     }
+
+    private void LinkedInIb_Clicked(object sender, EventArgs e)
+    {
+        Launcher.OpenAsync("https://www.linkedin.com");
+    }
+
+    private void FacebookIb_Clicked(object sender, EventArgs e)
+    {
+        Launcher.OpenAsync("https://www.facebook.com");
+    }
+
+    private void YoutubeIb_Clicked(object sender, EventArgs e)
+    {
+        Launcher.OpenAsync("https://www.youtube.com");
+    }
+
+    private void InstagramIb_Clicked(object sender, EventArgs e)
+    {
+        Launcher.OpenAsync("https://www.instagram.com");
+    }
+
+    private void XIb_Clicked(object sender, EventArgs e)
+    {
+        Launcher.OpenAsync("https://www.x.com");
+    }
 }
