@@ -18,7 +18,7 @@ namespace TigerEsports_V1.Validation
             base.OnDetachingFrom(bindable);
             bindable.TextChanged -= BindableOnTextChanged;
         }
-        private async void BindableOnTextChanged(object? sender, TextChangedEventArgs e)
+        private void BindableOnTextChanged(object? sender, TextChangedEventArgs e)
         {
             var Password = e.NewTextValue;
             var entry = sender as Entry;
@@ -32,7 +32,7 @@ namespace TigerEsports_V1.Validation
         private bool IsPasswordValid(string password)
         {
 #if DEBUG
-            return password.Length >= 8;
+            return password.Length >= 3;
 
 #else
             return Regex.IsMatch(password, "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$");

@@ -20,7 +20,7 @@ namespace TigerEsports_V1.Validation
             bindable.TextChanged -= BindableOnTextChanged;
         }
 
-        private async void BindableOnTextChanged(object? sender, TextChangedEventArgs e)
+        private void BindableOnTextChanged(object? sender, TextChangedEventArgs e)
         {
             var Password = e.NewTextValue;
             var entry = sender as Entry;
@@ -35,7 +35,7 @@ namespace TigerEsports_V1.Validation
         private bool IsPasswordValid(string password)
         {
 #if DEBUG
-            var longEnough = password.Length >= 8;
+            var longEnough = password.Length >= 3;
             if (longEnough)
             {
                 ValidationVault.StoredPasswordValidation = password;
