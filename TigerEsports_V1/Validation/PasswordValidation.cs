@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace TigerEsports_V1.Validation
@@ -34,16 +35,17 @@ namespace TigerEsports_V1.Validation
 
         private bool IsPasswordValid(string password)
         {
+
 #if DEBUG
             var longEnough = password.Length >= 3;
             if (longEnough)
-            {
                 ValidationVault.StoredPasswordValidation = password;
-            }
             return longEnough;
-
 #else
-            return Regex.IsMatch(password, "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$");
+            bool passwordMatches = Regex.IsMatch(password, "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$");
+            if (passwordMatches)
+                ValidationVault.StoredPasswordValidation = password;
+            return passwordMatches;
 #endif
         }
     }
