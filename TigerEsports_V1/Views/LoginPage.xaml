@@ -14,7 +14,7 @@
             </Grid.RowDefinitions>
 
             <VerticalStackLayout Grid.Row="0">
-                <Label Text="Tiger Esports"
+                <Label Text="Tiger Games E-Sports v1.0"
                        FontSize="18"
                        FontAttributes="Bold"
                        Margin="5"
@@ -70,7 +70,7 @@
                 <!--NDA Text-->
                 <Label Padding="5"
                        FontSize="14"
-                       Text="By logging in, you agree to abide by our Non-Disclosure Agreement and terms of service. Unauthorized sharing or misuse of information is prohibited." />
+                       Text="By logging in, you agree to abide by our Non-Disclosure Agreement and terms of service. Unauthorised sharing or misuse of information is prohibited." />
 
                 <!--Login Button-->
                 <Button x:Name="LoginBtn"
@@ -91,49 +91,59 @@
                 </Label>
             </VerticalStackLayout>
 
+            <!--Footer-->
+
             <Frame Background="#023971"
                    Grid.Row="1"
                    CornerRadius="8">
 
-                <FlexLayout BackgroundColor="#023971"
-                            Direction="Row"
-                            JustifyContent="SpaceAround">
+                <StackLayout>
+                    <Label Text="Tiger Games 2024©"
+                           TextColor="White"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Center"
+                           Margin="0, 0, 0, 16" />
 
-                    <ImageButton x:Name="LinkedInIb"
-                                 Source="linkedin_icon.svg"
-                                 Aspect="AspectFit"
-                                 Clicked="LinkedInIb_Clicked"
-                                 WidthRequest="28"
-                                 HeightRequest="28" />
+                    <FlexLayout BackgroundColor="#023971"
+                                Direction="Row"
+                                JustifyContent="SpaceAround">
 
-                    <ImageButton x:Name="FacebookIb"
-                                 Source="facebook_icon.svg"
-                                 Aspect="AspectFit"
-                                 Clicked="FacebookIb_Clicked"
-                                 WidthRequest="28"
-                                 HeightRequest="28" />
+                        <ImageButton x:Name="LinkedInIb"
+                                     Source="linkedin_icon.svg"
+                                     Aspect="AspectFit"
+                                     Clicked="LinkedInIb_Clicked"
+                                     WidthRequest="28"
+                                     HeightRequest="28" />
 
-                    <ImageButton x:Name="YoutubeIb"
-                                 Source="youtube_icon.svg"
-                                 Aspect="AspectFit"
-                                 Clicked="YoutubeIb_Clicked"
-                                 WidthRequest="28"
-                                 HeightRequest="28" />
+                        <ImageButton x:Name="FacebookIb"
+                                     Source="facebook_icon.svg"
+                                     Aspect="AspectFit"
+                                     Clicked="FacebookIb_Clicked"
+                                     WidthRequest="28"
+                                     HeightRequest="28" />
 
-                    <ImageButton x:Name="InstagramIb"
-                                 Source="instagram_icon.svg"
-                                 Aspect="AspectFit"
-                                 Clicked="InstagramIb_Clicked"
-                                 WidthRequest="28"
-                                 HeightRequest="28" />
+                        <ImageButton x:Name="YoutubeIb"
+                                     Source="youtube_icon.svg"
+                                     Aspect="AspectFit"
+                                     Clicked="YoutubeIb_Clicked"
+                                     WidthRequest="28"
+                                     HeightRequest="28" />
 
-                    <ImageButton x:Name="XIb"
-                                 Source="x_icon.svg"
-                                 Aspect="AspectFit"
-                                 Clicked="XIb_Clicked"
-                                 WidthRequest="28"
-                                 HeightRequest="28" />
-                </FlexLayout>
+                        <ImageButton x:Name="InstagramIb"
+                                     Source="instagram_icon.svg"
+                                     Aspect="AspectFit"
+                                     Clicked="InstagramIb_Clicked"
+                                     WidthRequest="28"
+                                     HeightRequest="28" />
+
+                        <ImageButton x:Name="XIb"
+                                     Source="x_icon.svg"
+                                     Aspect="AspectFit"
+                                     Clicked="XIb_Clicked"
+                                     WidthRequest="28"
+                                     HeightRequest="28" />
+                    </FlexLayout>
+                </StackLayout>
 
             </Frame>
         </Grid>

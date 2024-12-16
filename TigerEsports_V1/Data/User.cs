@@ -11,6 +11,8 @@ namespace TigerEsports_V1.Data
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+        [MaxLength(254)]
+        public string Email { get; set; }
         [MaxLength(100)]
         public string Username { get; set; }
         [MaxLength(100)]

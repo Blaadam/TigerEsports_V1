@@ -5,10 +5,8 @@
              Title="Results">
     <ScrollView>
         <VerticalStackLayout>
-            <!--Dignitas-->
-            <Frame Grid.Row="0"
-                   Grid.Column="0"
-                   Padding="5, 5, 5, 5"
+            <!--Result 1-->
+            <Frame Padding="5, 5, 5, 5"
                    Margin="8, 16, 8, 8"
                    HeightRequest="110"
                    BackgroundColor="#ffffff">
@@ -31,6 +29,12 @@
                                FontSize="14"
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />
+
+                        <Label Text="2024-12-09"
+                               Padding="10, 0, 0, 0"
+                               FontSize="14"
+                               BackgroundColor="#ffffff"
+                               VerticalOptions="Center" />
                     </StackLayout>
 
                     <Image Source="team_liquid.jpg"
@@ -41,10 +45,8 @@
                 </Grid>
             </Frame>
 
-            <!--Invictus-->
-            <Frame Grid.Row="0"
-                   Grid.Column="0"
-                   Padding="5, 5, 5, 5"
+            <!--Result 2-->
+            <Frame Padding="5, 5, 5, 5"
                    Margin="8, 16, 8, 8"
                    HeightRequest="110"
                    BackgroundColor="#ffffff">
@@ -67,6 +69,12 @@
                                FontSize="14"
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />
+
+                        <Label Text="2024-12-09"
+                               Padding="10, 0, 0, 0"
+                               FontSize="14"
+                               BackgroundColor="#ffffff"
+                               VerticalOptions="Center" />
                     </StackLayout>
 
                     <Image Source="invictus.jpg"
@@ -77,10 +85,8 @@
                 </Grid>
             </Frame>
 
-            <!--Fnatic-->
-            <Frame Grid.Row="0"
-                   Grid.Column="0"
-                   Padding="5, 5, 5, 5"
+            <!--Result 3-->
+            <Frame Padding="5, 5, 5, 5"
                    Margin="8, 16, 8, 8"
                    HeightRequest="110"
                    BackgroundColor="#ffffff">
@@ -103,6 +109,12 @@
                                FontSize="14"
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />
+
+                        <Label Text="2024-12-09"
+                               Padding="10, 0, 0, 0"
+                               FontSize="14"
+                               BackgroundColor="#ffffff"
+                               VerticalOptions="Center" />
                     </StackLayout>
 
                     <Image Source="fnatic.jpg"
@@ -114,9 +126,7 @@
             </Frame>
 
             <!--FaZe-->
-            <Frame Grid.Row="0"
-                   Grid.Column="0"
-                   Padding="5, 5, 5, 5"
+            <Frame Padding="5, 5, 5, 5"
                    Margin="8, 16, 8, 8"
                    HeightRequest="110"
                    BackgroundColor="#ffffff">
@@ -139,6 +149,12 @@
                                FontSize="14"
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />
+
+                        <Label Text="2024-12-09"
+                               Padding="10, 0, 0, 0"
+                               FontSize="14"
+                               BackgroundColor="#ffffff"
+                               VerticalOptions="Center" />
                     </StackLayout>
 
                     <Image Source="faze.jpg"
@@ -149,9 +165,7 @@
             </Frame>
 
             <!--Dignitas-->
-            <Frame Grid.Row="0"
-                   Grid.Column="0"
-                   Padding="5, 5, 5, 5"
+            <Frame Padding="5, 5, 5, 5"
                    Margin="8, 16, 8, 8"
                    HeightRequest="110"
                    BackgroundColor="#ffffff">
@@ -174,6 +188,12 @@
                                FontSize="14"
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />
+
+                        <Label Text="2024-12-09"
+                               Padding="10, 0, 0, 0"
+                               FontSize="14"
+                               BackgroundColor="#ffffff"
+                               VerticalOptions="Center" />
                     </StackLayout>
 
                     <Image Source="dignitas.jpg"
@@ -185,9 +205,7 @@
             </Frame>
 
             <!--Dignitas-->
-            <Frame Grid.Row="0"
-                   Grid.Column="0"
-                   Padding="5, 5, 5, 5"
+            <Frame Padding="5, 5, 5, 5"
                    Margin="8, 16, 8, 8"
                    HeightRequest="110"
                    BackgroundColor="#ffffff">
@@ -207,6 +225,12 @@
 
                         <Label Text="Final Score: 3-2"
                                Padding="10, 0, 0, 5"
+                               FontSize="14"
+                               BackgroundColor="#ffffff"
+                               VerticalOptions="Center" />
+
+                        <Label Text="2024-12-09"
+                               Padding="10, 0, 0, 0"
                                FontSize="14"
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />

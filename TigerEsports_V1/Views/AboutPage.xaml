@@ -47,7 +47,7 @@
                                HorizontalOptions="Start" />
 
                         <Label Text="Programmer"
-                               Padding="0, 0, 10, 5"
+                               Padding="5, 0, 10, 5"
                                FontSize="14"
                                BackgroundColor="#ffffff"
                                HorizontalOptions="Start" />
@@ -75,7 +75,7 @@
                                HorizontalOptions="Start" />
 
                         <Label Text="Design Intern"
-                               Padding="0, 0, 10, 5"
+                               Padding="5, 0, 10, 5"
                                FontSize="14"
                                BackgroundColor="#ffffff"
                                HorizontalOptions="Start" />
@@ -103,7 +103,7 @@
                                HorizontalOptions="Start" />
 
                         <Label Text="Lead Programmer"
-                               Padding="0, 0, 10, 5"
+                               Padding="5, 0, 10, 5"
                                FontSize="14"
                                BackgroundColor="#ffffff"
                                HorizontalOptions="Start" />
@@ -131,7 +131,7 @@
                                HorizontalOptions="Start" />
 
                         <Label Text="Technical Director"
-                               Padding="0, 0, 10, 5"
+                               Padding="5, 0, 10, 5"
                                FontSize="14"
                                BackgroundColor="#ffffff"
                                HorizontalOptions="Start" />

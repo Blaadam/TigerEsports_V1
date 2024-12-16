@@ -12,6 +12,7 @@ namespace TigerEsports_V1.Validation
         public static string StoredPasswordValidation = "";
 
         // Data for Registration Validation
+        public static bool Email = false;
         public static bool RegPassword = false;
         public static bool RegConfirmPassword = false;
 

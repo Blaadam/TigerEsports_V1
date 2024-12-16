@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using TigerEsports_V1.Data;
 using TigerEsports_V1.Databases;
 using TigerEsports_V1.Validation;
@@ -32,18 +33,20 @@ public partial class RegisterPage : ContentPage
             await DisplayAlert("Registration Error", "You need to input a valid password before you can create an account.", "Ok");
             return;
         }
+
+        if (!ValidationVault.Email)
+        {
+            await DisplayAlert("Registration Error", "You need to input a valid email before you can create an account.", "Ok");
+            return;
+        }
+
+        string email = EmailTb.Text.Trim();
         string username = UsernameTb.Text.Trim();
         string password = ValidationVault.StoredPasswordValidation;
 
         if (teamPicker.SelectedItem == null)
         {
             await DisplayAlert("Registration Error", "You need to select a team before you can create an account.", "Ok");
-            return;
-        }
-
-        if (accessPicker.SelectedItem == null)
-        {
-            await DisplayAlert("Registration Error", "You need to select an access level before you can create an account.", "Ok");
             return;
         }
 
@@ -56,17 +59,24 @@ public partial class RegisterPage : ContentPage
         }
 
         string team = teamPicker.SelectedItem.ToString();
-        string accessLevel = accessPicker.SelectedItem.ToString();
 
         User newUser = new User();
+        newUser.Email = email;
         newUser.Username = username;
         newUser.Password = password;
         newUser.Team = team;
-        newUser.AccessLevel = accessLevel;
 
         await _database.SaveUserAsync(newUser);
 
         Application.Current.MainPage = new AppShell(_database);
         await DisplayAlert("Registration Successful", "You have successfully created an account!", "Continue");
+    }
+
+    private void ClearBtn_Clicked(object sender, EventArgs e)
+    {
+        EmailTb.Text = string.Empty;
+        UsernameTb.Text = string.Empty;
+        PasswordTb.Text = string.Empty;
+        ConfirmPasswordTb.Text = string.Empty;
     }
 }

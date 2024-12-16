@@ -18,6 +18,28 @@
                    HeightRequest="185"
                    Aspect="AspectFit" />
 
+            <!--Email Field-->
+            <StackLayout VerticalOptions="Start"
+                         Padding="5">
+                <Label Text="Email"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start" />
+
+                <Frame Padding="2"
+                       BackgroundColor="#edeff2"
+                       CornerRadius="8"
+                       BorderColor="Transparent">
+                    <Entry x:Name="EmailTb"
+                           PlaceholderColor="#7E858C"
+                           Placeholder="Enter your email"
+                           HeightRequest="48">
+                        <Entry.Behaviors>
+                            <validation:EmailValidation />
+                        </Entry.Behaviors>
+                    </Entry>
+                </Frame>
+            </StackLayout>
+
             <!--Username Field-->
             <StackLayout VerticalOptions="Start"
                          Padding="5">
@@ -101,33 +123,9 @@
                                 <x:String>Dignitas</x:String>
                                 <x:String>Evil Geniuses</x:String>
                                 <x:String>FaZe</x:String>
-                                <x:String>FnaticMonkey</x:String>
+                                <x:String>Fnatic</x:String>
                                 <x:String>Invictus</x:String>
                                 <x:String>Team Liquid</x:String>
-                            </x:Array>
-                        </Picker.ItemsSource>
-                    </Picker>
-                </Frame>
-            </StackLayout>
-
-            <!--Access Picker-->
-            <StackLayout VerticalOptions="Start"
-                         Padding="5">
-                <Label Text="Access Level"
-                       FontAttributes="Bold"
-                       HorizontalOptions="Start" />
-
-                <Frame Padding="2"
-                       BackgroundColor="#edeff2"
-                       CornerRadius="8"
-                       BorderColor="Transparent">
-
-                    <Picker x:Name="accessPicker"
-                            Title="Choose an access level">
-                        <Picker.ItemsSource>
-                            <x:Array Type="{x:Type x:String}">
-                                <x:String>Player</x:String>
-                                <x:String>Manager</x:String>
                             </x:Array>
                         </Picker.ItemsSource>
                     </Picker>
@@ -139,13 +137,30 @@
                    FontSize="14"
                    Text="By logging in, you agree to abide by our Non-Disclosure Agreement and terms of service. Unauthorized sharing or misuse of information is prohibited." />
 
-            <!--Register Button-->
-            <Button x:Name="RegisterBtn"
-                    BackgroundColor="{StaticResource Primary}"
-                    Text="Create Account"
-                    Margin="10"
-                    TextColor="White"
-                    Clicked="RegisterBtn_Clicked" />
+            <!--Buttons-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <!--Register Button-->
+                <Button x:Name="RegisterBtn"
+                        BackgroundColor="{StaticResource Primary}"
+                        Text="Create Account"
+                        Margin="10"
+                        TextColor="White"
+                        Clicked="RegisterBtn_Clicked" />
+
+                <!--Clear Button-->
+                <Button x:Name="ClearBtn"
+                        BackgroundColor="{StaticResource Primary}"
+                        Text="Clear"
+                        Margin="10"
+                        TextColor="White"
+                        Grid.Column="1"
+                        Clicked="ClearBtn_Clicked" />
+            </Grid>
 
             <!--Login Link-->
             <Label Padding="5"
