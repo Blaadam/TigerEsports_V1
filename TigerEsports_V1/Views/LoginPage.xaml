@@ -14,7 +14,7 @@
             </Grid.RowDefinitions>
 
             <VerticalStackLayout Grid.Row="0">
-                <Label Text="Tiger Games E-Sports v1.0"
+                <Label Text="Tiger Games E-Sports v1.0 Beta"
                        FontSize="18"
                        FontAttributes="Bold"
                        Margin="5"
@@ -98,12 +98,6 @@
                    CornerRadius="8">
 
                 <StackLayout>
-                    <Label Text="Tiger Games 2024©"
-                           TextColor="White"
-                           VerticalOptions="Start"
-                           HorizontalOptions="Center"
-                           Margin="0, 0, 0, 16" />
-
                     <FlexLayout BackgroundColor="#023971"
                                 Direction="Row"
                                 JustifyContent="SpaceAround">
@@ -143,6 +137,12 @@
                                      WidthRequest="28"
                                      HeightRequest="28" />
                     </FlexLayout>
+                    
+                    <Label Text="Tiger Games 2024©"
+                           TextColor="White"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Center"
+                           Margin="0, 20, 0, 0" />
                 </StackLayout>
 
             </Frame>

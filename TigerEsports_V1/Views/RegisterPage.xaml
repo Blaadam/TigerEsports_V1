@@ -7,7 +7,7 @@
              xmlns:validation="clr-namespace:TigerEsports_V1.Validation">
     <ScrollView>
         <VerticalStackLayout>
-            <Label Text="Register"
+            <Label Text="Tiger Games Beta v1.0 - Register"
                    FontSize="18"
                    FontAttributes="Bold"
                    Margin="5"
@@ -135,7 +135,7 @@
             <!--NDA Text-->
             <Label Padding="5"
                    FontSize="14"
-                   Text="By logging in, you agree to abide by our Non-Disclosure Agreement and terms of service. Unauthorized sharing or misuse of information is prohibited." />
+                   Text="By logging in, you agree to abide by our Non-Disclosure Agreement and terms of service. Unauthorised sharing or misuse of information is prohibited." />
 
             <!--Buttons-->
             <Grid>
@@ -150,6 +150,7 @@
                         Text="Create Account"
                         Margin="10"
                         TextColor="White"
+                        Grid.Column="1"
                         Clicked="RegisterBtn_Clicked" />
 
                 <!--Clear Button-->
@@ -158,7 +159,7 @@
                         Text="Clear"
                         Margin="10"
                         TextColor="White"
-                        Grid.Column="1"
+                        Grid.Column="0"
                         Clicked="ClearBtn_Clicked" />
             </Grid>
 

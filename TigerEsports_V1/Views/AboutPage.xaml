@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TigerEsports_V1.Views.AboutPage"
-             Title="About Us"
+             Title="Tiger Games Beta v1.0 - About Us"
              Padding="2">
     <ScrollView>
         <VerticalStackLayout>

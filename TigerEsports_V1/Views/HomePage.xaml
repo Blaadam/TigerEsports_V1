@@ -3,12 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TigerEsports_V1.Views.HomePage"
              Title="Home">
-    <VerticalStackLayout HorizontalOptions="Center"
-                         Padding="10">
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10"
+                         Padding="16">
         
         <Label Text="Welcome to Tiger Games E-Sports!"
                VerticalOptions="Center"
                HorizontalOptions="Center" />
+
+        <Image Source="icon_tg.png" MaximumHeightRequest="128" />
+
         <Label Text="This application is currently under development, bugs and incomplete features are expected."
                VerticalOptions="Center"
                HorizontalOptions="Center" />
