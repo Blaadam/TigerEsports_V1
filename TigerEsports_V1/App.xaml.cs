@@ -11,7 +11,8 @@ namespace TigerEsports_V1
             Application.Current.UserAppTheme = AppTheme.Light;
 
             //MainPage = new AppShell();
-            MainPage = new LoginPage(database);
+            //MainPage = new LoginPage(database);
+            MainPage = new LoadingView(database);
         }
     }
 }
