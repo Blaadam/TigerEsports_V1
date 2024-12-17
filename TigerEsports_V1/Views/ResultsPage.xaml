@@ -30,7 +30,7 @@
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />
 
-                        <Label Text="Dec 17 2024"
+                        <Label Text="17 DEC 2024"
                                Padding="10, 0, 0, 0"
                                FontSize="14"
                                BackgroundColor="#ffffff"
@@ -70,7 +70,7 @@
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />
 
-                        <Label Text="Dec 16 2024"
+                        <Label Text="16 DEC 2024"
                                Padding="10, 0, 0, 0"
                                FontSize="14"
                                BackgroundColor="#ffffff"
@@ -110,7 +110,7 @@
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />
 
-                        <Label Text="Dec 15 2024"
+                        <Label Text="15 DEC 2024"
                                Padding="10, 0, 0, 0"
                                FontSize="14"
                                BackgroundColor="#ffffff"
@@ -150,7 +150,7 @@
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />
 
-                        <Label Text="Dec 14 2024"
+                        <Label Text="14 DEC 2024"
                                Padding="10, 0, 0, 0"
                                FontSize="14"
                                BackgroundColor="#ffffff"
@@ -189,7 +189,7 @@
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />
 
-                        <Label Text="Dec 13 2024"
+                        <Label Text="13 DEC 2024"
                                Padding="10, 0, 0, 0"
                                FontSize="14"
                                BackgroundColor="#ffffff"
@@ -229,7 +229,7 @@
                                BackgroundColor="#ffffff"
                                VerticalOptions="Center" />
 
-                        <Label Text="Dec 12 2024"
+                        <Label Text="12 DEC 2024"
                                Padding="10, 0, 0, 0"
                                FontSize="14"
                                BackgroundColor="#ffffff"
